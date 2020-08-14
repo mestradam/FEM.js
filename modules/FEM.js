@@ -2813,12 +2813,7 @@ function setLoadTorqueScale( scale ) {
           curveShaft = model.getObjectByName( 'joints' ).getObjectByName( joint ).getObjectByName( 'loads' ).getObjectByName( loadPatternName ).getObjectByName( 'resultant' ).getObjectByName( 'torque' ).getObjectByName( 'arrow' ).getObjectByName( 'curveShaft' );
           curveShaft.geometry.dispose();
           curveShaft.geometry = createCurveShaftGeometry( magnitud, config[ 'load.shaft.tube' ] );
-
-          model.getObjectByName( 'joints' ).getObjectByName( joint ).getObjectByName( 'loads' ).getObjectByName( loadPatternName ).getObjectByName( 'resultant' ).getObjectByName( 'torque' ).getObjectByName( 'arrow' ).getObjectByName( 'head' ).position.setY( -magnitud );
-        }
-      });
-    }
-  });
+            
 }
 
 function setLoadHeadHeight( height ) {

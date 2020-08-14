@@ -94,13 +94,43 @@
         }
     },
     "load_patterns": {
+        "point loads": {
+            "joints": {
+                "1": [
+                    {
+                        "fx": 10,
+                        "fy": 15,
+                        "fz": -12,
+                        "mx": 0,
+                        "my": 0,
+                        "mz": 0
+                    }
+                ]
+            },
+            "frames": {
+                "1-2": {
+                    "uniformly_distributed": {
+                        "global": [
+                            {
+                                "fx": 1,
+                                "fy": -2.4,
+                                "fz": 0,
+                                "mx": 0,
+                                "my": 0,
+                                "mz": 0
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "distributed loads": {
             "frames": {
                 "1-2": {
                     "uniformly_distributed": {
                         "global": [
                             {
-                                "fx": 0,
+                                "fx": 1,
                                 "fy": -2.4,
                                 "fz": 0,
                                 "mx": 0,
@@ -116,6 +146,20 @@
                             {
                                 "fx": 0,
                                 "fy": -3.5,
+                                "fz": 0,
+                                "mx": 0,
+                                "my": 0,
+                                "mz": 0
+                            }
+                        ]
+                    }
+                },
+                "3-1": {
+                    "uniformly_distributed": {
+                        "global": [
+                            {
+                                "fx": 0,
+                                "fy": 0 ,
                                 "fz": 0,
                                 "mx": 0,
                                 "my": 0,
