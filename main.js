@@ -14,6 +14,43 @@ var autocomplete = document.getElementById( "autocomplete" );
 
 // set the functions
 
+// addLoadAtJoint
+terminal.add_function( 'addLoadAtJoint', {
+  func: FEM.addLoadAtJoint
+});
+
+// addLoadPattern
+terminal.add_function('addLoadPattern', {
+  func: FEM.addLoadPattern,
+  successful: function ( name ) {
+    return "load pattern '" + name + "' was added";
+  }
+});
+
+// removeLoadPattern
+terminal.add_function('removeLoadPattern', {
+  func: FEM.removeLoadPattern,
+  succesful: function ( name ) {
+    return "load pattern '" + name + "' was removed";
+  }
+});
+
+// addSupport
+terminal.add_function('addSupport', {
+  func: FEM.addSupport,
+  successful: function ( name ) {
+    return "support " + name + " was added";
+  }
+});
+
+// removeSupport
+terminal.add_function( 'removeSupport', {
+  func: FEM.removeSupport,
+  successful: name => {
+    return "support '" + name + "' was removed";
+  }
+});
+
 // addFrame
 terminal.add_function('addFrame', {
   func: FEM.addFrame,
